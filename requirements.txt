@@ -1,0 +1,16 @@
+opencv-python
+torch
+torchvision
+pandas
+numpy
+
+# DeepMetricLearning
+optuna
+
+# reID
+Cython
+bhtsne
+sklearn
+
+# pySlackCallのインストール方法は https://github.com/torumitsutake/SlackCall
+
