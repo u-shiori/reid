@@ -7,17 +7,33 @@
 
 ## 使用方法
 
+### 0. セットアップ
+```sh
+git clone https://github.com/u-shiori/reid
+cd reid
+pip install -r requirements.txt
+```
+
+### 1. データセットの作成
+```sh
+sh generate_traindata.sh
+```
 ### 入力
 
-```python src/train.py```で実行可能。
+```sh
+python src/train.py --model Triplet
+                            Arcface
+                            ImprovedTriplet
+                            Quadruplet
+                            ClusterTriplet
+                            UIR
+```
 
 
 
 `train.py`内にあるパラメータを下記で説明。
 
 ##### model parameter
-
-* model_name: model_namesから学習したいモデル名を選択
 
 * margin_a: Triplet Loss 使用時のマージンα
 * margin_b: ImprovedTriplet, Quadruplet 使用時のマージンβ
